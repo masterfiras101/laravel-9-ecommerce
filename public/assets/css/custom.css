@@ -1,0 +1,876 @@
+/* @keyframes mycolor{
+    0%{background-color: aquamarine;}
+    25%{background-color: rgba(255, 94, 94, 0.883);}
+    45%{background-color: rgb(100, 145, 218);};
+    65%{background-color: rgb(255, 240, 108);}
+ }
+    animation: 10s linear 0s infinite running myslide;
+
+@keyframes mycolorchang{
+    0%{background-color: aquamarine;}
+    25%{background-color: rgba(255, 94, 94, 0.883);}
+    45%{background-color: rgb(0, 22, 15);};
+    65%{background-color: rgb(255, 238, 85);}
+ }
+ @keyframes myslide{
+     from{margin-right:50%;}
+     to{margin-left:50%;}
+ }
+ @keyframes myOpacity{
+ 50%{Opacity:0;}
+ } */
+
+:root{
+    --bg-navbar : #428aff;
+    --nav-font-color : #000;
+    --hue-color: 224;
+    /* --first-color: hsl(var(--hue-color), 89%, 60%); */
+    --main-color: hsl(var(--hue-color), 56%, 12%);
+}
+
+
+/* for check the login  */
+.container .card .card-body .for-thanks{
+    margin-left:250px;
+}
+/* end the check the login */
+
+/* Card Of Login */
+@media only screen and (max-width: 1600px){
+.card{
+    border:3px solid black;
+    border-radius:30px 30px 30px 30px;
+    margin-top:50px;
+    margin-left:15%;
+    margin-right:15%;
+    padding-top:20px;
+    padding-bottom:50px;
+    font-weight: bold;
+    /* text-align: right; */
+}
+
+.card-header{
+    background-color:rgb(0, 132, 255);
+    font-size:15pt;
+    border-radius:30px;
+    text-align: right;
+    padding-right: 30px;
+
+}
+#email{
+    margin-left: 10px;
+}
+#password{
+    margin-left: 10px;
+
+}
+
+#label-em-pass{
+    margin-left: 15px;
+}
+.form-check .fa{padding-left: 4px;}
+#remember{
+margin-left: 80px;
+border:2px solid black;
+width: 30px;
+background-color: yellow;
+
+}
+
+
+}
+
+/* End Card Of Login */
+
+.colorSelectionLabel{
+    color: #000;
+    padding: 2px 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.colorSelectionLabel:active{
+    background-color: #fff !important;
+    border: 2px solid #000;
+}
+
+
+/* Cart or Wishlist */
+.shopping-cart .cart-header{
+    padding: 10px;
+}
+.shopping-cart .cart-header h4{
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.shopping-cart .cart-item a{
+    text-decoration: none;
+}
+.shopping-cart .cart-item{
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+.shopping-cart .cart-item .product-name{
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+}
+.shopping-cart .cart-item .price{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px 2px;
+}
+.shopping-cart .btn1{
+    border: 1px solid;
+    margin-right: 3px;
+    border-radius: 0px;
+    font-size: 10px;
+}
+.shopping-cart .btn1:hover{
+    background-color: #2874f0;
+    color: #fff;
+}
+.shopping-cart .input-quantity{
+    border: 1px solid #000;
+    margin-right: 3px;
+    font-size: 12px;
+    width: 40%;
+    outline: none;
+    text-align: center;
+}
+/* Cart or Wishlist */
+
+/* Prodcut View */
+.product-view .product-name-view{
+    font-size: 24px;
+    color: #2874f0;
+}
+.product-view .for-check-quantity_and_color .label-stock-view{
+     font-size: 12px;
+     padding: 4px 13px;
+     border-radius: 5px;
+     color: #fff;
+     box-shadow: 0 0.125rem  0.25rem rgb(0 0 0 / 8%);
+     /* float: right; */
+}
+.product-view .product-path{
+    font-size: 13px;
+    font-weight: 500;
+    color: #252525;
+    margin-bottom: 16px;
+
+}
+.product-view .selling-price{
+    font-weight: 600;
+    font-size: 26px;
+    color: #000;
+    margin-right: 7px;
+
+}
+.product-view .original-price{
+    font-size: 17px;
+    color: #937979;
+    font-weight: 400;
+    text-decoration: line-through;
+
+}
+
+.product-view .btn1{
+    border: 1px solid;
+    margin-right: 3px;
+    border-radius: 0px;
+    font-size:14px;
+    margin-top: 10px;
+
+}
+
+.product-view .btn1:hover{
+   background-color: #2874f0;
+   color: #fff;
+}
+.product-view .input-quantity{
+    border: 1px solid #000;
+    margin-right: 3px;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 58px;
+    outline: none;
+    text-align: center;
+}
+
+
+/*  End the Prodcut View */
+
+
+
+
+
+
+
+
+
+/* Animation  */
+@keyframes border-page-title-products{
+    0%{border: 3px  dotted rgb(2, 154, 255);}
+    25%{border: 3px  dotted rgb(230, 255, 2);}
+    45%{border: 3px  dotted rgb(255, 2, 192);}
+    65%{border: 3px  dotted rgb(2, 255, 44);}
+ }
+@keyframes title-in-page-products{
+    from{margin-left:-10%;letter-spacing:7px}
+    to{margin-right:-10%;}
+}
+@keyframes myOpacity{
+    50%{Opacity:0;}
+}
+
+  /* End the animation  */
+
+/* design at page of Home */
+
+.card-home{
+    border:3px solid black;
+    border-radius:30px 30px 30px 30px;
+    margin-top:150px;
+    margin-left:15%;
+    margin-right:15%;
+    padding-top:20px;
+    padding-bottom:50px;
+    font-weight: bold;
+    /* text-align: right; */
+}
+
+.card-header-home{
+    background-color:rgb(0, 132, 255);
+    font-size:15pt;
+    border-radius:30px;
+    text-align: right;
+    padding: 5px 30px 5px 0px;
+}
+.card-home .card-body-home .for-thanks{
+  margin:30px 0px 0px 170px;
+  padding: 0px 0px 50px 0px;
+  font-weight: bold;
+  font-size: 15pt;
+
+}
+
+
+/* End the design at page of Home */
+
+
+/* Category Start */
+.container{
+    width: 80%;
+}
+.category-card{
+    border: 1px solid #ddd;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    margin-bottom: 24px;
+    background-color: #fff;
+}
+.category-card a{
+    text-decoration: none;
+}
+.category-card .category-card-img{
+    max-height: 260px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.category-card .category-card-body{
+    padding: 10px 16px;
+}
+.category-card .category-card-body h5{
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+/* Category End */
+
+/* Product Card */
+#product_page_title{
+
+    background-color: rgb(255, 255, 255);
+    padding:2px 2px;
+    border: 3px  dotted rgb(2, 154, 255);
+    border-radius:10px;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    animation: 5s linear 0s infinite running ;
+
+
+}
+
+#product_page_title h4{
+    margin-left: 45%;
+    animation: 5s linear 0s infinite running myOpacity;
+    animation: 5s linear 0s infinite running  title-in-page-products;
+
+}
+.product-card{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+}
+.product-card a{
+    text-decoration: none;
+}
+.check-quantity{
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(2, 154, 255);
+    border-radius:10px;
+
+}
+.check-quantity s{
+    border: 2px solid skyblue;
+    border-radius:100%;
+    padding:3px;
+    color: rgb(211, 255, 15);
+    margin-left: 44px;
+    margin-right: 45px;
+}
+
+.check-quantity .stock{
+    /* position: absolute; */
+
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 38px 3px 48px;
+    margin: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid skyblue;
+    border-radius:10px;
+}
+.check-quantity #stock-motwfer{
+
+    padding-right:60px;
+    padding-left: 60px;
+
+}
+.product-card .product-card-img{
+    max-height: 260px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.product-card .product-card-img img{
+    width: 100%;
+}
+.product-card .product-card-body{
+    padding: 10px 10px;
+}
+.product-card .product-card-body .product-brand{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+    color: #937979;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.product-card .product-card-body .product-name{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.product-card .product-card-body .selling-price{
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+    margin-right: 8px;
+}
+.product-card .product-card-body .original-price{
+    font-size: 18px;
+    color: #937979;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.product-card .product-card-body .btn1{
+    border: 1px solid;
+    margin-right: 3px;
+    border-radius: 0px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+/* Product Card End */
+
+
+.carousel-item .im-show{
+    height: 500px;
+    width: 100%;
+}
+
+
+.carousel-item .custom-carousel-content{
+    width: 50%;
+    transform: translate(0%, -10%);
+}
+.custom-carousel-content{
+    text-align: start;
+}
+
+.custom-carousel-content h1{
+
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+}
+.custom-carousel-content h1 span{
+    color: yellow;
+}
+
+.custom-carousel-content p{
+
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.custom-carousel-content .btn-slider{
+
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 26px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+/* Navbar CSS --------------- */
+
+
+/* for input the search */
+.input-group #s{
+    border-radius: 20px;
+    font-weight: bold;
+    height:40px;
+    width:250px;
+    text-align:right;
+
+}
+
+.input-group .fa-search{
+
+    padding:5px;
+    border:3px solid rgb(24, 190, 255);
+    border-radius: 100%;
+    background-color: blanchedalmond;
+}
+/* End for input the search */
+
+
+.main-navbar{
+    /* border-bottom: 1px solid #ccc; */
+    color: black;
+
+}
+.main-navbar .top-navbar{
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    /* font-weight: bold; */
+}
+
+.main-navbar .top-navbar .brand-name{
+
+    color: rgb(0, 0, 0);
+    font-size: 22pt ;
+    font-weight:bold;
+    /* text-shadow: 0px 2px 3px rgb(122, 37, 37),3px 2px 2px yellow; */
+    margin-left: 20%;
+}
+
+.main-navbar .top-navbar .nav-link{
+
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-navbar .top-navbar .dropdown-menu{
+
+    padding: 0px 0px;
+    border-radius: 0px;
+
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item{
+
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    align-items: center;
+        justify-content: center;
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item i{
+
+    width: 20px;
+    text-align: center;
+    color: #57ddff;
+    font-size: 14px;
+
+
+}
+
+.main-navbar .navbar{
+
+    padding: 0px;
+    /* background-color: rgb(34, 131, 243); */
+    backdrop-filter: 20px;
+    /* border: 1 ridge rgb(34, 155, 255); */
+    /* box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2); */
+    border: none;
+    color:#000;
+    font-weight: bold;
+
+}
+ /* .main-navbar .navbar{
+    padding-left: 60%;
+    font-weight: bold;
+} */
+.main-navbar .navbar .container-fluid{
+
+    color: white;
+    /* justify-content: right; */
+    background-color: var(--main-color);
+}
+.main-navbar .navbar .container-fluid .collapse{
+    /* background-color: rgb(0, 0, 0); */
+    color: white;
+    /* color: rgb(0, 162, 255); */
+    /* border: 3px ridge rgb(255, 255, 255);
+    border-radius: 20px; */
+
+    justify-content: right;
+    background-color:var(--main-color);
+
+}
+.main-navbar .navbar .nav-item .nav-link{
+
+    padding: 8px 20px;
+
+    color: white;
+
+    font-size: 15px;
+    backdrop-filter: blur(20px);
+
+
+}
+/* end the Navbar CSS --------------- */
+
+
+
+
+/* Media of size in some monitoros in some phones */
+
+@media only screen and (max-width: 768px){
+
+/* For anmation in some the Itmes in any page  */
+    @keyframes border-page-title-products{
+        0%{border: 3px  dotted rgb(2, 154, 255);}
+        25%{border: 3px  dotted rgb(230, 255, 2);}
+        45%{border: 3px  dotted rgb(255, 2, 192);}
+        65%{border: 3px  dotted rgb(2, 255, 44);}
+    }
+    @keyframes title-in-page-products{
+        from{margin-left:-10%;letter-spacing:7px}
+        to{margin-right:100%;}
+    }
+    @keyframes myOpacity{
+        50%{Opacity:0;}
+        }
+/* End the For anmation in some the Itmes in any page  */
+
+
+/* design at page of Home */
+
+.card-home{
+    border:3px solid black;
+    border-radius:30px 30px 30px 30px;
+    margin-top:100px;
+    margin-left:5%;
+    margin-right:5%;
+    padding-top:20px;
+    padding-bottom:10px;
+    font-weight: bold;
+    /* text-align: right; */
+}
+
+.card-home .card-header-home{
+    margin: 0px;
+    background-color:rgb(0, 132, 255);
+    border-radius:30px;
+    font-size:12pt;
+    text-align: right;
+}
+
+.card-home .card-body-home .for-thanks{
+  margin:30px 0px 0px 40px;
+  padding: 0px 0px 10px 0px;
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+/* End the design at page of Home */
+
+/* page of products */
+
+#product_page_title{
+
+    background-color: rgb(0, 0, 0);
+    padding:2px 9px 4px 4px;
+    border: 3px  dotted rgb(2, 154, 255);
+    border-radius:10px;
+    color: rgb(0, 162, 255);
+    padding-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+
+    /* animation: 3s linear 0s infinite running border-page-title-products; */
+}
+
+#product_page_title h4{
+    animation: 1s linear 0s infinite running title-in-page-products;
+    margin-left: 130px;
+    margin-top: 10px;
+}
+
+.check-quantity{
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(2, 154, 255);
+    border-radius:10px;
+
+}
+.check-quantity s{
+    border: 2px solid skyblue;
+    border-radius:100%;
+    padding:3px;
+    color: rgb(211, 255, 15);
+    margin-left: 34px;
+    margin-right: 25px;
+}
+
+.check-quantity .stock{
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px 28px 3px 28px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid skyblue;
+    border-radius:10px;
+}
+.check-quantity #stock-motwfer{
+    padding-right:50px;
+    padding-left: 50px;
+}
+
+/* end page of products */
+
+
+/* Card Of Login */
+
+    .card{
+
+        border:3px solid rgb(100, 94, 94);
+        border-radius:10px 20px 30px 30px;
+        margin-top:50px;
+        margin-left:8%;
+        margin-right:8%;
+        padding-top:5px;
+        padding-bottom:10px;
+        /* width: ; */
+        text-align: right;
+
+    }
+    .card .card-header{
+        width: 70%;
+        height: 40px;
+        margin-left: 40px;
+        background-color:rgb(29, 183, 255);
+        font-size:12pt;
+        border: 1px solid black;
+        border-radius:30px;
+        padding-right: 35px;
+        color:black;
+        text-align: right;
+
+    }
+    #email{
+        margin-left: 7px;
+    }
+    #password{
+        margin-left: 7px;
+
+    }
+
+    #label-em-pass{
+        margin-left: 5px;
+    }
+    .form-check .fa{
+        padding-left: 4px;
+    }
+    #remember{
+        margin-left: 80px;
+        border:2px solid black;
+        width: 30px;
+        background-color: yellow;
+
+    }
+/* End Card Of Login */
+
+/* Design the navabar */
+    /* .main-navbar .top-navbar{
+    backdrop-filter: 20px;
+
+    } */
+
+    .main-navbar .navbar{
+        padding: 0px;
+        backdrop-filter: 20px;
+        color: var(--nav-font-color);
+        border: 3px ridge rgb(255, 255, 255);
+    }
+
+
+
+    .main-navbar .navbar-expand-lg {
+        /* width: 50%; */
+        border: none;
+
+
+    }
+        .main-navbar .navbar .container-fluid {
+
+            /* color: var(--nav-font-color); */
+            /* justify-content: right; */
+            /* background-color: var(--main-color); */
+            backdrop-filter: 20px;
+        }
+    .main-navbar .navbar-expand-lg .navbar-collapse {
+
+        /* justify-content: center; */
+        text-align: center;
+    }
+    .main-navbar .navbar-expand-lg .navbar-collapse .nav-link{
+        /* backdrop-filter: 20px; */
+        border:none;
+        color: white;
+}
+    .navbar .container-fluid .navbar-brand {
+      color: white;
+    }
+    .main-navbar .top-navbar .nav-link{
+        font-size: 14px;
+        padding: 8px 10px;
+        font-weight: bold;
+        color: rgb(0, 162, 255);
+        margin-right: 5px;
+    }
+
+    .navbar .container-fluid .navbar-toggler-icon{
+     background-color: white;
+        backdrop-filter: 20px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+}
+/* End the  Design the navabar */
+
+
+/* Design The Crousel in Front end for user */
+    #carouselExampleCaptions .carousel-control-prev{
+        color:black;
+    }
+    .carousel-inner{
+        /* background-color: rgb(0, 0, 0); */
+        backdrop-filter: blur(20px);
+    }
+    .carousel-item {
+        margin-left: 60px;
+    }
+    .carousel-item .im-show{
+        height: 250px;
+        width: 70%;
+        border-radius: 100%;
+    }
+    .carousel-item .carousel-caption  .custom-carousel-content{
+        width: 10%;
+        transform: translate(0%, -10%);
+    }
+    .carousel-caption .custom-carousel-content{
+        text-align: start;
+    }
+
+    .custom-carousel-content h1{
+
+        font-size: 40px;
+        font-weight: 70;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .custom-carousel-content h1 span{
+        color: yellow;
+    }
+
+    .custom-carousel-content p{
+
+        font-size: 8px;
+        font-weight: 40;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    .custom-carousel-content .btn-slider{
+
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 8px 13px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 60;
+        letter-spacing: 0.5px;
+    }
+/*  end the design the crousel*/
+
+
+
+}
+/* End the  Media of size in some monitoros in some phones */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
