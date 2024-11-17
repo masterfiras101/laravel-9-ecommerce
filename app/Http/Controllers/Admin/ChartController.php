@@ -80,7 +80,7 @@ class ChartController extends Controller
         // return view('admin.analy.tables');
     }
     function order_invoice(int $order_id)
-    {   
+    {
         $products_order = Product::find($order_id);
         // $users_all = User::where('role_as', '0')->get();
         $pdf = reportpdf::loadView('admin.analy.generate-invoic', compact('products_order'));
